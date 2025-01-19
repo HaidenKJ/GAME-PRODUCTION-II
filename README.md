@@ -12,7 +12,3 @@ Note: This does not include the actual Project, just the assets and code for it,
 
 
 
-Github repository: GAME-PRODUCTION-II_GAME_PROJECT
-// Will have the actual Unity Project
-Github repository: GAME-PRODUCTION-II
-// Will have the Assets for the project
