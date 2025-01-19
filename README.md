@@ -7,3 +7,12 @@ The Primary Project is labelled:
 GAME-PRODUCTION-II_GAME_PROJECT
 
 Note: This does not include the actual Project, just the assets and code for it, I have a seperate repository named "GAME-PRODUCTION-II_GAME_PROJECT" that the actual project belongs to.
+
+
+
+
+
+Github repository: GAME-PRODUCTION-II_GAME_PROJECT
+// Will have the actual Unity Project
+Github repository: GAME-PRODUCTION-II
+// Will have the Assets for the project
