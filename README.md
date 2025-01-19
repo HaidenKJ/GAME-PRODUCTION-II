@@ -5,3 +5,5 @@ GAME PRODUCTION II CRN-50712-202402
 
 The Primary Project is labelled:
 GAME-PRODUCTION-II (GAME PROJECT)
+
+Note: This does not include the actual Project, just the assets and code for it, I have a seperate repository named "GAME-PRODUCTION-II (GAME PROJECT)" that the actual project belongs to.
