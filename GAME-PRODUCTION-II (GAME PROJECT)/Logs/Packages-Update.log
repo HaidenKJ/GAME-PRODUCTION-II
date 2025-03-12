@@ -59,3 +59,12 @@ The following packages were added:
   com.unity.test-framework@1.1.33
   com.unity.xr.legacyinputhelpers@2.1.10
   com.unity.ai.navigation@1.1.5
+
+=== Wed Mar 12 12:52:48 2025
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.rider from version 3.0.31 to 3.0.34
+  com.unity.xr.legacyinputhelpers from version 2.1.10 to 2.1.11
