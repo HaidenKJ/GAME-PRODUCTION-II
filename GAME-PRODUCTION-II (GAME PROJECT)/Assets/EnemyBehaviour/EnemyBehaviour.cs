@@ -48,7 +48,9 @@ public class EnemyBehaviour : MonoBehaviour
 
         //WalkPoint Reached
         if(distanceToWalkPoint.magnitude < 1f)
-            walkPointSet = true;
+            walkPointSet = false;
+
+        
     }
     private void ChasePlayer()
     {
@@ -75,17 +77,24 @@ public class EnemyBehaviour : MonoBehaviour
     {
         alreadyAttacked = false;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        other.gameObject.transform.position = new Vector3(5.71f,0f,0f);
+        Debug.Log("RRRAAAAAAAAAAAH");
 
+    }
 
     private void SearchWalkPoint()
     {
-        //Calculate random point in range
+        // Calculate random point
         float randomZ = Random.Range(-walkPointR, walkPointR);
         float randomX = Random.Range(-walkPointR, walkPointR);
+        Vector3 randomPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, WhatIsGround))
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(randomPoint, out hit, 2f, NavMesh.AllAreas)) // Check if point is valid
         {
+            walkPoint = hit.position;
             walkPointSet = true;
         }
     }
