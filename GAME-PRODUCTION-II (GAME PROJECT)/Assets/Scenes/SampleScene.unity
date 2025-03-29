@@ -179,10 +179,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointR: 5
+  walkPointR: 250
   timeBetweenAttacks: 2
   sightRange: 20
-  attackRange: 1
+  attackRange: 5
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!136 &62944529
@@ -200,12 +200,12 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8
-  m_Height: 2.5
+  m_Radius: 1
+  m_Height: 4
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &62944530
