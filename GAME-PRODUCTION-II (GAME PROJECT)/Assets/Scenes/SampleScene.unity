@@ -220,12 +220,16 @@ MonoBehaviour:
   sceneLights:
   - {fileID: 1491734251}
   - {fileID: 750683409}
-  exposureLevel: 50
-  exposureSpeed: 3
+  exposureSpeed: 10
   maxExposure: 100
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+--- !u!4 &711212909 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8065008294890974111, guid: fd45fb6a229d4714389fca2eed3f7143, type: 3}
+  m_PrefabInstance: {fileID: 1589955937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!108 &750683409 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 5354506154003992742, guid: 3b851efdfb808684fac1e8e0ef96523e, type: 3}
@@ -388,7 +392,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8065008294890974111, guid: fd45fb6a229d4714389fca2eed3f7143, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1858362042}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd45fb6a229d4714389fca2eed3f7143, type: 3}
 --- !u!4 &1625494452 stripped
@@ -420,14 +427,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858362041}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.174571, y: 8.522979, z: -1.831692}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.825429, y: 3.5229788, z: -1.831692}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 479132828}
   - {fileID: 1625494452}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 711212909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1914060640
 PrefabInstance:
@@ -566,6 +573,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3296530990166897076, guid: 7dc5140b61d259e47b0da6961f06be35, type: 3}
+      propertyPath: heartIcon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034763530355431197, guid: 7dc5140b61d259e47b0da6961f06be35, type: 3}
+      propertyPath: m_text
+      value: "Controls:\n\nWASD - Movement \nCtrl - Toggle Crouch\nQ & E - Lean\n\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 4433046435687976646, guid: 7dc5140b61d259e47b0da6961f06be35, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -653,6 +668,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2195080985450487498, guid: 7dc5140b61d259e47b0da6961f06be35, type: 3}
+    - {fileID: 183899949248369937, guid: 7dc5140b61d259e47b0da6961f06be35, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dc5140b61d259e47b0da6961f06be35, type: 3}
@@ -759,4 +775,3 @@ SceneRoots:
   - {fileID: 584977877}
   - {fileID: 5672153715532292328}
   - {fileID: 1589955937}
-  - {fileID: 1858362042}

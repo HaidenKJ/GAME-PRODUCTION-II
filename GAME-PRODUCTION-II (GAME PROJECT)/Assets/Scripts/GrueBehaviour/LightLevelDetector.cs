@@ -1,13 +1,18 @@
 using UnityEngine;
 
-public class LightRaycastExposure : MonoBehaviour
+public class LightLevelDetector : MonoBehaviour
 {
     public Light[] sceneLights;         // Assign lights in Inspector
-    public float exposureLevel = 0f;
-    public float exposureSpeed = 0.5f;
-    public float maxExposure = 1f;
-
+    public float exposureLevel { get; private set; }
+    public float exposureSpeed = 10f;
+    public float maxExposure = 100f;
     public LayerMask obstructionMask;   // What counts as "blocking" the light
+    public BPMManager BPMM;
+
+    // void Start()
+    // {
+    //     exposureLevel = 100f;
+    // }
 
     void Update()
     {
@@ -33,6 +38,8 @@ public class LightRaycastExposure : MonoBehaviour
 
         exposureLevel = Mathf.Clamp(exposureLevel, 0f, maxExposure);
         Debug.Log("Exposure (Raycast): " + exposureLevel);
+
+        GrueBehaviour();
     }
 
     bool IsLitByLight(Light light)
@@ -88,5 +95,10 @@ public class LightRaycastExposure : MonoBehaviour
             default:
                 return 0f;
         }
+    }
+
+    public void GrueBehaviour()
+    {
+
     }
 }

@@ -10,6 +10,7 @@ public class BPMManager : MonoBehaviour
     public float bpm = 75f; // Default BPM value, I might change it tho
     private float beatInterval;
     private bool isBeating = true;
+    public LightLevelDetector exposureSource;
 
     void Awake()
     {
@@ -27,6 +28,10 @@ public class BPMManager : MonoBehaviour
     {
         UpdateBeatInterval();
         StartCoroutine(HeartBeatRoutine());
+    }
+    void Update()
+    {
+        float currentExposure = exposureSource.exposureLevel;
     }
 
     void UpdateBeatInterval()
