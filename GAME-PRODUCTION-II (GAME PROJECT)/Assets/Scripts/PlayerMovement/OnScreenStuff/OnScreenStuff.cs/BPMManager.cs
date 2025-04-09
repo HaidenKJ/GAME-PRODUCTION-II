@@ -52,14 +52,14 @@ public class BPMManager : MonoBehaviour
     IEnumerator HeartPulse()
     {
         float duration = beatInterval / 4f; // Short pulse duration
-        Vector3 originalScale = heartIcon.transform.localScale;
-        Vector3 enlargedScale = originalScale * 1.2f; // Enlarge slightly
+        // Vector3 originalScale = heartIcon.transform.localScale;
+        // Vector3 enlargedScale = originalScale * 1.2f; // Enlarge slightly
 
         // Scale Up
         float elapsedTime = 0;
         while (elapsedTime < duration)
         {
-            heartIcon.transform.localScale = Vector3.Lerp(originalScale, enlargedScale, elapsedTime / duration);
+            // heartIcon.transform.localScale = Vector3.Lerp(originalScale, enlargedScale, elapsedTime / duration);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
@@ -68,7 +68,7 @@ public class BPMManager : MonoBehaviour
         elapsedTime = 0;
         while (elapsedTime < duration)
         {
-            heartIcon.transform.localScale = Vector3.Lerp(enlargedScale, originalScale, elapsedTime / duration);
+            // heartIcon.transform.localScale = Vector3.Lerp(enlargedScale, originalScale, elapsedTime / duration);
             elapsedTime += Time.deltaTime;
             yield return null;
         }

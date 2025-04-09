@@ -196,7 +196,7 @@ public class PlayerMovement : MonoBehaviour
     void Heartrate()
     {
         float currentBPM = BPMManager.Instance.bpm;
-        Debug.Log($"Heartrate: {currentBPM}");
+        //Debug.Log($"Heartrate: {currentBPM}");
         // Pulling from BPMManager
     }
 
