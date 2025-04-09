@@ -131,6 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 265519991}
+  - component: {fileID: 265519992}
   m_Layer: 0
   m_Name: Grue
   m_TagString: Untagged
@@ -146,13 +147,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265519990}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.079345, y: 5.643935, z: -0.86960554}
+  m_LocalRotation: {x: -0, y: -0.70103383, z: -0, w: -0.7131281}
+  m_LocalPosition: {x: -1.0958338, y: 5.643935, z: 13.802623}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 602412378}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &265519992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265519990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd5b2c558499064abcb40d2b146c6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneLights: []
+  detectedIntensity: 0
 --- !u!4 &479132828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8031014381640078567, guid: 3b851efdfb808684fac1e8e0ef96523e, type: 3}
@@ -286,8 +301,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
-  m_Range: 10
+  m_Intensity: 0.2
+  m_Range: 6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -453,7 +468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031014381640078567, guid: 3b851efdfb808684fac1e8e0ef96523e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.444571
+      value: 4.83
       objectReference: {fileID: 0}
     - target: {fileID: 8031014381640078567, guid: 3b851efdfb808684fac1e8e0ef96523e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -461,7 +476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031014381640078567, guid: 3b851efdfb808684fac1e8e0ef96523e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -32.4
+      value: -64.16
       objectReference: {fileID: 0}
     - target: {fileID: 8031014381640078567, guid: 3b851efdfb808684fac1e8e0ef96523e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -700,8 +715,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6919614940816532767, guid: ac9b2c73e1fd5d04fadaf09fe6712abe, type: 3}
       propertyPath: m_text
-      value: "Controls:\n\nWASD - Movement \nShift - Sprint\nCtrl - Toggle Crouch\nQ
-        & E - Lean\n\nF - Interact \n(Press the Cube)\n  (Plays sound)\n\n\n"
+      value: "Controls:\n\nWASD - Movement \nCtrl - Toggle Crouch\nQ & E - Lean\n\nF
+        - Interact \n\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 6919614940816532767, guid: ac9b2c73e1fd5d04fadaf09fe6712abe, type: 3}
       propertyPath: m_fontColor.b
@@ -815,6 +830,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 76041265320360032, guid: 2451e132c9bd0224db28f9ccef9936cf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1289466609}
+    - targetCorrespondingSourceObject: {fileID: 76041265320360032, guid: 2451e132c9bd0224db28f9ccef9936cf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 265519991}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2451e132c9bd0224db28f9ccef9936cf, type: 3}
 --- !u!1660057539 &9223372036854775807
@@ -825,5 +843,4 @@ SceneRoots:
   - {fileID: 584977877}
   - {fileID: 4131193795989617397}
   - {fileID: 1589955937}
-  - {fileID: 265519991}
   - {fileID: 1858362042}
